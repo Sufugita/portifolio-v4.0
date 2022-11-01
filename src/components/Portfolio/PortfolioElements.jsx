@@ -20,7 +20,7 @@ export const PortfolioContainer = styled.div`
     //Important part for not overflow.
     height: 1250px; 
     background: ${(props) => props.theme.BackColor};
-    padding-top:40px;
+    padding-top: auto;
   }
   `
 export const PortfolioH1 = styled.h1`
