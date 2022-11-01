@@ -28,7 +28,13 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding:0 24px;
     max-width: 1100px;
-    `
+    
+    @media screen and (max-width: 768px) {
+        display: flex;
+        position: relative;
+        text-align: center;             
+    }
+`
 
 // Logo //
 export const NavLogo = styled.div`
@@ -58,14 +64,13 @@ export const NavLinks = styled(LinkS)`
 export const MobileIcon = styled.div`
     display: none;
     @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
+        display: flex;
+        position: relative;
+        align-items: center;
         font-size: 1.8rem;
-        cursor: pointer;        
+        cursor: pointer;     
         color:${(props) => props.theme.TextColor};
+        white-space: nowrap;
     }
     &:hover {
         color: ${(props) => props.theme.PrimaryColor};
@@ -102,7 +107,7 @@ export const NavBtn = styled.nav`
 export const NavIconTheme = styled(FaSun)`
     position: relative;
     color: ${(props) => props.theme.TextColor};
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -110,6 +115,8 @@ export const NavIconTheme = styled(FaSun)`
     background: transparent;
     cursor: pointer;
     outline: none;
+    white-space: nowrap;
+    
 
     &:hover {
         color: ${(props) => props.theme.PrimaryColor};
@@ -117,13 +124,14 @@ export const NavIconTheme = styled(FaSun)`
     }
 
     @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;        
+        display: flex;
+        position: relative;
+        left: auto;
+        right: auto;
+        text-align: center;
+        font-size: 1.6rem;
+
+             
     }
 
 `
