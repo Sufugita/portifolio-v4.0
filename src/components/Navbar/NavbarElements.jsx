@@ -40,11 +40,11 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled.div`
     color: ${(props) => props.theme.TextColor};
     justify-self: flex-start;
-    pointer-events: none;
     display: flex;
     align-items: center;
     margin-left: 24px;
     transform: scale(1);
+    cursor: pointer;
 
     @media screen and (max-width: 768px) {
         margin-left: -15px;        

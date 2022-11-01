@@ -8,7 +8,7 @@ const Navbar = ({ toggle, setTheme }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo >
+                    <NavLogo to="home" >
                         <img src={Logo} alt="" />
                     </NavLogo>
                     <NavIconTheme onClick={setTheme}>
