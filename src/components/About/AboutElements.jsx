@@ -86,6 +86,7 @@ export const Subtitle = styled.p`
   margin-top: 4rem;
   font-size: 18px;
   line-height: 24px;
+  text-align: justify;
   color: ${(props) => props.theme.TextColor};
   display: flex;
   justify-content: center;

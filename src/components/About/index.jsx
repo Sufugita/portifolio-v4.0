@@ -20,12 +20,12 @@ const AboutSection = () => {
               <TextWrapper>
                 <TopLine>About Me</TopLine>
                 <Heading>Web Developer</Heading>
-                <Subtitle> Undergraduated in Civil Engineering from Unesp,
-                  where I went through some areas and felt dissatisfied,
+                <Subtitle> Undergraduated in Civil Engineering (Unesp),
+                  where I went through some areas and felt dissatisfied.
                   I looked for areas of technology, where I found myself
                   in programming. Today I love programming, I rediscovered
-                  myself in the area of ​​web development, always looking to
-                  be updated and adapting to the market.
+                  myself in ​​web development area, always studying to be
+                  updated in the market.
                 </Subtitle>
               </TextWrapper>
             </Column2>
