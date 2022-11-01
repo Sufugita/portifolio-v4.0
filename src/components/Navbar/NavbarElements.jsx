@@ -45,6 +45,11 @@ export const NavLogo = styled.div`
     align-items: center;
     margin-left: 24px;
     transform: scale(1);
+
+    @media screen and (max-width: 768px) {
+        margin-left: -15px;        
+    }
+
 `
 export const NavLinks = styled(LinkS)`
     color:${(props) => props.theme.TextColor};
@@ -130,7 +135,7 @@ export const NavIconTheme = styled(FaSun)`
         right: auto;
         text-align: center;
         font-size: 1.6rem;
-
+        margin-right: 15px;
              
     }
 
