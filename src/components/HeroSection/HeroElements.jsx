@@ -23,6 +23,9 @@ export const HeroContainer = styled.div`
     background: linear-gradient(180deg, rgb(242, 242, 243,1) 0%,rgba(255,255,255,0.2) 50%,rgb(242, 242, 243,1) 100%),
     linear-gradient(180deg, rgb(242, 242, 243,0.8) 0%, transparent 100%);
   }
+  @media screen and (max-width: 768px) {
+    height: 770px;
+  }
 `
 
 export const HeroBg = styled.div`
