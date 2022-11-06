@@ -32,7 +32,7 @@ export const ContactContainer = styled.div`
   }
   
   @media screen and (max-width: 480px) {
-    height: 650px; 
+    height: 550px; 
     background:  ${(props) => props.theme.BackColor};
   }
 `

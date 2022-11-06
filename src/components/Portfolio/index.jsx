@@ -1,11 +1,14 @@
 import React from 'react'
-import Icon1 from '../../images/svg1.svg'
-import Icon2 from '../../images/svg-2.svg'
-import Icon3 from '../../images/svg-3.svg'
 import {
-  PortfolioContainer, PortfolioH1, PortfolioWrapper,
-  PortfolioCard, PortfolioIcon, PortfolioH2, PortfolioP
-} from './PortfolioElements'
+  PortfolioContainer, PortfolioH1,
+  CardsContainer, CardsWrapper,
+  CardsItems
+} from './CardsElements'
+import CardItem from './CardItem'
+import img1 from '../../images/img1.jpg'
+import img2 from '../../images/img2.jpg'
+import img3 from '../../images/img3.jpg'
+
 // import { BrowserRouter as Router } from 'react-router-dom;
 
 function Portfolio() {
@@ -13,23 +16,45 @@ function Portfolio() {
     <>
       <PortfolioContainer id='portfolio'>
         <PortfolioH1>Portfolio</PortfolioH1>
-        <PortfolioWrapper>
-          <PortfolioCard >
-            <PortfolioIcon src={Icon1} />
-            <PortfolioH2 >Memory Game</PortfolioH2>
-            <PortfolioP> React Hooks </PortfolioP>
-          </PortfolioCard>
-          <PortfolioCard>
-            <PortfolioIcon src={Icon2} />
-            <PortfolioH2>Travel Site</PortfolioH2>
-            <PortfolioP> Side Navigation Dropbar Routes</PortfolioP>
-          </PortfolioCard>
-          <PortfolioCard>
-            <PortfolioIcon src={Icon3} />
-            <PortfolioH2>Figma to React</PortfolioH2>
-            <PortfolioP> Rocketseat Project Tailwind Storybook</PortfolioP>
-          </PortfolioCard>
-        </PortfolioWrapper>
+        <CardsContainer>
+          <CardsWrapper>
+            <CardsItems>
+              <CardItem
+                src={img1}
+                text="React Hooks"
+                label='Memory Game'
+                path='/memory'
+              /><br />
+              <CardItem
+                src={img2}
+                text="Experience Football on Top of the Himilayan Mountains"
+                label='Adventure'
+                path='/products'
+              />
+              
+            </CardsItems>
+            <CardsItems>
+              <CardItem
+                src={img3}
+                text="Set Sail in the Atlantic Ocean visiting"
+                label='Mystery'
+                path='/services'
+              /><br />
+              <CardItem
+                src={img3}
+                text="Experience Football on Top of the Himilayan Mountains"
+                label='Adventure'
+                path='/products'
+              /><br />
+              <CardItem
+                src={img3}
+                text="Experience Football on Top of the Himilayan Mountains"
+                label='Adventure'
+                path='/products'
+              />
+            </CardsItems>
+          </CardsWrapper>
+        </CardsContainer>
       </PortfolioContainer>
     </>
   )

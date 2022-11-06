@@ -6,7 +6,7 @@ export const Nav = styled.nav`
     
     background: ${(props) => props.theme.BackColor};
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +43,7 @@ export const NavLogo = styled.div`
     display: flex;
     align-items: center;
     margin-left: 24px;
+    margin-top: 8px;
     transform: scale(1);
     cursor: pointer;
 

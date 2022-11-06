@@ -24,10 +24,10 @@ export const HeroContainer = styled.div`
     linear-gradient(180deg, rgb(242, 242, 243,0.8) 0%, transparent 100%);
   }
   @media screen and (max-width: 768px) {
-    height: 770px;
+    height: 950px;
   }
   @media screen and (max-width: 480px) {
-    height: 570px;
+    height: 940px;
   }
 `
 

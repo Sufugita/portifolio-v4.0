@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars, FaSun } from 'react-icons/fa';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavIconTheme, NavBtnLink } from './NavbarElements'
 import Logo from '../../images/LogoDevR02.png'
@@ -8,9 +9,11 @@ const Navbar = ({ toggle, setTheme }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="home" >
-                        <img src={Logo} alt="" />
-                    </NavLogo>
+                    <Link to = "/">
+                        <NavLogo>
+                            <img src={Logo} alt="" />
+                        </NavLogo>
+                    </Link>
                     <NavIconTheme onClick={setTheme}>
                         <FaSun />
                     </NavIconTheme>

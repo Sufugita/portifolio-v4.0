@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
 
 export const AboutWrapper = styled.div`
   display: grid;
-  z-index: 1;
+  z-index: 3;
   height: auto;
   width: 100%;
   max-width: 1100px;
@@ -19,7 +19,6 @@ export const AboutWrapper = styled.div`
   padding: auto 24px;
   justify-content: center;
   height:100vh;
-  
 `
 
 // Importante Cols! Learning more about.

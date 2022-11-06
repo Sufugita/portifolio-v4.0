@@ -1,24 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import AboutSection from '../components/About'
 import Contact from '../components/Contact'
 import HeroSection from '../components/HeroSection'
-import Navbar from '../components/Navbar'
 import Portfolio from '../components/Portfolio'
-import Sidebar from '../components/Sidebar'
 
-const Home = ({ setTheme }) => {
-
-  //Alternância do botão
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar setTheme={setTheme} toggle={toggle} />
       <HeroSection />
       <AboutSection />
       <Portfolio />
