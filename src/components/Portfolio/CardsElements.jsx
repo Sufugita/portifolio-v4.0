@@ -82,12 +82,11 @@ export const CardsItemPicWrap = styled.div`
       content: attr(data-category);
       position: absolute;
       bottom: 0;
-      margin-left: 10px;
-      padding: 6px 8px;
+      padding: 4px 5px;
       max-width: calc((100%) - 60px);
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 700;
-      color: ${(props) => props.theme.TextColor};
+      color: #fff;
       background-color: ${(props) => props.theme.PrimaryColor};
       box-sizing: border-box;
    }
@@ -108,7 +107,7 @@ export const CardsItemImg = styled.img`
    transition: all 0.2s linear;
 
    &:hover {
-      transform: scale(1.2)
+      transform: scale(1.1)
    }
    
 `

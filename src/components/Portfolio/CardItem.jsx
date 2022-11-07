@@ -5,7 +5,8 @@ import {
 } from "./CardsElements";
 
 function CardItem(props) {
-    return (
+    return (<>
+
         <CardsItem>
             <CardLink to={props.path}>
                 <CardsItemPicWrap data-category={props.label}>
@@ -16,6 +17,8 @@ function CardItem(props) {
                 </CardsItemInfo>
             </CardLink>
         </CardsItem>
+    </>
+
     )
 }
 

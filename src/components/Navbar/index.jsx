@@ -4,7 +4,7 @@ import { FaBars, FaSun } from 'react-icons/fa';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavIconTheme, NavBtnLink } from './NavbarElements'
 import Logo from '../../images/LogoDevR02.png'
 
-const Navbar = ({ toggle, setTheme }) => {
+const Navbar = ({ toggle, changeTheme }) => {
     return (
         <>
             <Nav>
@@ -14,7 +14,7 @@ const Navbar = ({ toggle, setTheme }) => {
                             <img src={Logo} alt="" />
                         </NavLogo>
                     </Link>
-                    <NavIconTheme onClick={setTheme}>
+                    <NavIconTheme onClick={changeTheme}>
                         <FaSun />
                     </NavIconTheme>
                     <MobileIcon onClick={toggle}>

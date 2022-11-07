@@ -1,29 +1,19 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
-import Home from './pages';
-import { ThemeProvider } from 'styled-components'
-import { darkTheme, lightTheme } from "./styles/theme";
-import GlobalStyle from "./styles/GlobalStyle";
-
+import React from "react";
+import Home from './pages/Home';
+import MemoryGame from "./pages/MemoryGame";
+import NoPage from "./pages/NoPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  const changeTheme = () => {
-    if (theme === "light") {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
-  }
 
   return (
-    <Router>
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-        <GlobalStyle />
-        <Home setTheme={changeTheme} />
-      </ThemeProvider>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="memorygame" element={<MemoryGame />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

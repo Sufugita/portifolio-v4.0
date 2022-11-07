@@ -1,15 +1,16 @@
 import React from 'react'
+
 import {
   PortfolioContainer, PortfolioH1,
   CardsContainer, CardsWrapper,
   CardsItems
 } from './CardsElements'
 import CardItem from './CardItem'
-import img1 from '../../images/img1.jpg'
+import img1 from '../../images/memoryGame.jpg'
 import img2 from '../../images/img2.jpg'
 import img3 from '../../images/img3.jpg'
 
-// import { BrowserRouter as Router } from 'react-router-dom;
+
 
 function Portfolio() {
   return (
@@ -23,7 +24,7 @@ function Portfolio() {
                 src={img1}
                 text="React Hooks"
                 label='Memory Game'
-                path='/memory'
+                path='/memorygame'
               /><br />
               <CardItem
                 src={img2}
@@ -31,7 +32,7 @@ function Portfolio() {
                 label='Adventure'
                 path='/products'
               />
-              
+
             </CardsItems>
             <CardsItems>
               <CardItem
