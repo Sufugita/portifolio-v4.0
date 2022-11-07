@@ -161,6 +161,5 @@ export const NavBtnLink = styled(LinkS)`
         transition: all 0.2 ease-in-out;
         background: ${(props) => props.theme.PrimaryColor};
         color: ${(props) => props.theme.SecondColor};
-        font-size: 17px;
     }
 `

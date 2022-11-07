@@ -32,9 +32,9 @@ export default function MemoryGame() {
   }
 
   return (
-    <div>
-      <h1> Memory Game by Igor Oliveira</h1>
-      <h2> ProgBr</h2>
+    <div className="memoryDiv">
+      <h1 className="memoryTitle">Memory Game by Igor Oliveira</h1>
+      <h2 className="memorySubtitle">ProgBr</h2>
       <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
       <GameOver show={gameOver} handleRestart={restart}></GameOver>
     </div>

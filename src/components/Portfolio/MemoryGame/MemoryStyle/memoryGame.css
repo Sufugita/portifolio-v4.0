@@ -5,7 +5,7 @@
 }
 
 
-body {
+.memoryDiv {
   font-family: 'Righteous', sans-serif;
   display: flex;
   justify-content: center;
@@ -15,15 +15,16 @@ body {
   background-color: #f2f2f3;
 }
 
-h1,
-div {
+.memoryTitle{
   text-align: center;
 }
 
-h2 {
+.memorySubtitle {
   text-align: center;
   margin-bottom: 20px;
 }
+
+
 
 
 .card {

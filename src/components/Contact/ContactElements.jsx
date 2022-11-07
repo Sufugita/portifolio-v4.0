@@ -101,7 +101,6 @@ export const ContactButton = styled.button`
         transition: all 0.2 ease-in-out;
         background: #0077fa;
         color: #f2f2f3;
-        font-size: 17px;
     }
 `
 export const Footer = styled.div`
