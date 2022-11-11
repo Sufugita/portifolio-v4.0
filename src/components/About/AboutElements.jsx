@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   background: ${(props) => props.theme.BackColor};
-  min-height: 850px;
+  /* min-height: 850px; */
   @media screen and (max-width: 768px) {
     padding: 20px 0;    
   }
@@ -14,7 +14,6 @@ export const AboutWrapper = styled.div`
   height: auto;
   width: 100%;
   max-width: 1100px;
-  
   margin-right: auto;
   margin-left: auto;
   padding: auto 24px;

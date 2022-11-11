@@ -3,6 +3,10 @@ import GameBoard from '../components/Portfolio/MemoryGame/GameBoard';
 import GameOver from '../components/Portfolio/MemoryGame/GameOver'
 import game from '../components/Portfolio/MemoryGame/game'
 import '../components/Portfolio/MemoryGame/MemoryStyle/memoryGame.css'
+import NavbarPortfolio from "../components/Portfolio/NavbarPortfolio";
+import Footer from "../components/Footer"
+
+
 
 export default function MemoryGame() {
 
@@ -31,12 +35,17 @@ export default function MemoryGame() {
     setCards([...game.cards])
   }
 
+
   return (
-    <div className="memoryDiv">
-      <h1 className="memoryTitle">Memory Game by Igor Oliveira</h1>
-      <h2 className="memorySubtitle">ProgBr</h2>
-      <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
-      <GameOver show={gameOver} handleRestart={restart}></GameOver>
-    </div>
+    <>
+      <NavbarPortfolio />
+      <div className="memoryDiv">
+        <h1 className="memoryTitle">Memory Game by Igor Oliveira</h1>
+        <h2 className="memorySubtitle">ProgBr</h2>
+        <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
+        <GameOver show={gameOver} handleRestart={restart}></GameOver>
+      </div>
+      <Footer style={{ backgroundColor: '#f2f2f3' }} />
+    </>
   )
 }

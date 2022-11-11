@@ -2,7 +2,7 @@ import React from 'react'
 
 const NoPage = () => {
   return (
-    <h1>No Page</h1>
+    <h1>404</h1>
   )
 }
 

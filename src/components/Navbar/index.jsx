@@ -22,18 +22,18 @@ const Navbar = ({ toggle, changeTheme }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="hero">Home</NavLinks>
+                            <NavLinks to="hero" spy={true} smooth={true} offset={0} duration={500}>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="about">About Me</NavLinks>
+                            <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} >About Me</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="portfolio">Portfolio</NavLinks>
+                            <NavLinks to="portfolio"spy={true} smooth={true} offset={0} duration={500} >Portfolio</NavLinks>
                         </NavItem>
                     </NavMenu>
 
                     <NavBtn>
-                        <NavBtnLink to="contact">Contact</NavBtnLink>
+                        <NavBtnLink to="contact"spy={true} smooth={true} offset={80} duration={500}>Contact</NavBtnLink>
                     </NavBtn>
 
                 </NavbarContainer>

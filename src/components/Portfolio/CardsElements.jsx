@@ -7,7 +7,7 @@ export const PortfolioContainer = styled.div`
    background: ${(props) => props.theme.BackColor};
    height: auto;
    z-index: 4;
-   margin-top: -60px;
+   /* margin-top: -60px; */
    
    @media screen and (max-width: 768px) {
     padding: 20px 0;    

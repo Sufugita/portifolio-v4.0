@@ -65,7 +65,13 @@ export const NavLinks = styled(LinkS)`
         color: ${(props) => props.theme.PrimaryColor};
         border-bottom: 3px solid ${(props) => props.theme.PrimaryColor};
     }
+
+    &.active{
+        color: ${(props) => props.theme.PrimaryColor};
+        border-bottom: 3px solid ${(props) => props.theme.PrimaryColor};
+    }
 `
+
 
 export const MobileIcon = styled.div`
     display: none;

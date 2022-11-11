@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection'
 import Portfolio from '../components/Portfolio'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import Footer from "../components/Footer"
 import { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme } from "../styles/theme";
 import { GlobalStyle } from '../styles/GlobalStyle';
@@ -36,6 +37,7 @@ const Home = () => {
         <Portfolio />
         <Contact />
         <GlobalStyle />
+        <Footer />
       </ThemeProvider>
     </>
   )

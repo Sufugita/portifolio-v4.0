@@ -22,7 +22,7 @@ function Portfolio() {
             <CardsItems>
               <CardItem
                 src={img1}
-                text="React Hooks"
+                text="JavaScript | CSS3 | ReactJS"
                 label='Memory Game'
                 path='/memorygame'
               /><br />

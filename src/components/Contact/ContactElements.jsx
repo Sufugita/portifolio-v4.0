@@ -6,18 +6,19 @@ color: ${(props) => props.theme.TextColor};
 font-weight: 700;
 letter-spacing: 1.4px;
 text-transform: uppercase;
-margin-bottom: 3rem;
 display: flex;
 justify-content: center;
+margin-top: 80px;
 
 @media screen and (max-width: 480px) {
+  margin-top: 0px;
   font-size: 2rem;
-  margin-bottom: 0rem;
+  margin-bottom: 2rem;
 }
 `
 
 export const ContactContainer = styled.div`
-  height: 750px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,12 +28,12 @@ export const ContactContainer = styled.div`
  
   
   @media screen and (max-width: 768px) {
-    height: 760px;
+    height: 90vh;
     background:  ${(props) => props.theme.BackColor};
   }
   
   @media screen and (max-width: 480px) {
-    height: 550px; 
+    height: 80vh; 
     background:  ${(props) => props.theme.BackColor};
   }
 `
@@ -42,8 +43,11 @@ export const ContactWrapper = styled.div`
   width:75%;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  height:60vh;
   padding:0 20px;
+  @media screen and (max-width: 480px) {
+    width:90%; 
+  }
 `
 
 
@@ -103,16 +107,6 @@ export const ContactButton = styled.button`
         color: #f2f2f3;
     }
 `
-export const Footer = styled.div`
-  display:flex;
-  height:80px;
-  background: ${(props) => props.theme.SecondColor};
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-
-`
-
 
 
 

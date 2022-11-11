@@ -1,24 +1,24 @@
 import React from "react";
 import {
   ContactContainer, ContactH1, ContactWrapper,
-  ContactForm, ContactInput, ContactButton, ContactTextArea, Footer
+  ContactForm, ContactInput, ContactButton, ContactTextArea
 } from "./ContactElements";
 import emailjs from 'emailjs-com'
 
 function Contact() {
-  
+
   /* EmailJS Docs */
   const handleSubmit = e => {
     e.preventDefault();
-    
+
     emailjs.sendForm('GmailMessage', 'template_3t7zgwm', e.target, '_f_oZ2Ze9sGFru6JW')
-    .then(() => {
+      .then(() => {
         alert(' Message sent successfully! ');
-    }, (error) => {
+      }, (error) => {
         console.log(error.message);
-    });
+      });
     e.target.reset();
- 
+
   };
 
 
@@ -49,7 +49,7 @@ function Contact() {
           </ContactForm>
         </ContactWrapper>
       </ContactContainer>
-      <Footer>yasuyukidev@gmail.com</Footer>
+    
     </>
   )
 }
