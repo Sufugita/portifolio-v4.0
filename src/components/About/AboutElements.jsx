@@ -26,24 +26,31 @@ export const AboutRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas:'col2 col1';
+  grid-template-areas:'col1 col2';
 // Muito bom para pequenas telas e deixar um em cima de outro.
   @media screen and (max-width: 768px) {
     grid-template-areas: 'col1' 'col2';   
     grid-auto-columns: minmax(auto, auto);
+    grid-auto-rows: minmax(auto,450px);
   }
 `
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
- 
 
+  @media screen and (max-width: 768px) {
+    grid-auto-rows: minmax(auto,300px);
+    max-height: auto;
+  }
 `
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  @media screen and (max-width: 768px) {
+    max-height: auto;
+  }
 `
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -76,7 +83,6 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;    
-    height: auto;
   }
 `
 
@@ -93,13 +99,18 @@ export const Subtitle = styled.p`
 
 
 export const ImgWrap = styled.div`
-  max-width: 700px;
-  height: 100%;
+  max-width: auto;
+  height: auto;
 `
 
 export const Img = styled.img`
   width: 100%;
-  padding-right: 0; 
   border-radius: 25%;
-  scale:0.6;
+  scale:0.8;
+  @media screen and (max-width: 768px) {
+    scale: 0.5;
+  }
+  @media screen and (max-width: 400px) {
+    scale: 0.4;
+  }
 `

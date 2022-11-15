@@ -45,7 +45,7 @@ export default function MemoryGame() {
         <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
         <GameOver show={gameOver} handleRestart={restart}></GameOver>
       </div>
-      <Footer style={{ backgroundColor: '#f2f2f3' }} />
+      <Footer/>
     </>
   )
 }

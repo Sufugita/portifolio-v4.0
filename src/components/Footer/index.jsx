@@ -1,9 +1,22 @@
 import React from 'react'
-import { FooterContainer } from './FooterElements'
+import { FooterContainer, Text, Email, IconHeart } from './FooterElements'
+import { FaHeart } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <FooterContainer>yasuyukidev@gmail.com</FooterContainer>
+    <FooterContainer>
+      <Text>Desenvolvido com
+        <em> </em>
+        <IconHeart>
+          <FaHeart />
+        </IconHeart>
+        <em> </em>
+        por Ya<span style={{color: 'red'}}>Su</span>yuki
+      </Text>
+      <Email onClick={() => window.location = 'mailto:yasuyukidev@gmail.com'}>
+        yasuyukidev@gmail.com
+      </Email>
+    </FooterContainer>
   )
 }
 

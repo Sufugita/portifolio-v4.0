@@ -28,9 +28,9 @@ function Portfolio() {
               /><br />
               <CardItem
                 src={img2}
-                text="Experience Football on Top of the Himilayan Mountains"
-                label='Adventure'
-                path='/products'
+                text="Backend | Frontend | ReactJS | Firebase"
+                label='Crud - Create | Read | Update | Delete'
+                path='/crud'
               />
 
             </CardsItems>

@@ -28,7 +28,7 @@ const Navbar = ({ toggle, changeTheme }) => {
                             <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} >About Me</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="portfolio"spy={true} smooth={true} offset={0} duration={500} >Portfolio</NavLinks>
+                            <NavLinks to="portfolio"spy={true} smooth={true} offset={-80} duration={500} >Portfolio</NavLinks>
                         </NavItem>
                     </NavMenu>
 
