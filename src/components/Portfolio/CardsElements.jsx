@@ -55,6 +55,7 @@ export const CardsItem = styled.ul`
    flex: 1;
    margin: 0 1rem;
    border-radius: 10px;
+   
 
    @media screen and (max-width: 1024px) {
     margin-bottom: 2rem;
@@ -103,7 +104,7 @@ export const CardsItemImg = styled.img`
    max-width: 100%;
    height: 100%;
    max-height: 100%;
-   object-fit: cover;
+   object-fit: contain;
    transition: all 0.2s linear;
 
    &:hover {

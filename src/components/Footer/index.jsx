@@ -5,6 +5,9 @@ import { FaHeart } from "react-icons/fa"
 const Footer = () => {
   return (
     <FooterContainer>
+      <Email onClick={() => window.location = 'mailto:yasuyukidev@gmail.com'}>
+        yasuyukidev@gmail.com
+      </Email>
       <Text>Desenvolvido com
         <em> </em>
         <IconHeart>
@@ -13,9 +16,6 @@ const Footer = () => {
         <em> </em>
         por Ya<span style={{color: 'red'}}>Su</span>yuki
       </Text>
-      <Email onClick={() => window.location = 'mailto:yasuyukidev@gmail.com'}>
-        yasuyukidev@gmail.com
-      </Email>
     </FooterContainer>
   )
 }

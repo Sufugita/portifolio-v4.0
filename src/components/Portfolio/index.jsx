@@ -7,8 +7,10 @@ import {
 } from './CardsElements'
 import CardItem from './CardItem'
 import img1 from '../../images/memoryGame.jpg'
-import img2 from '../../images/img2.jpg'
-import img3 from '../../images/img3.jpg'
+import img2 from '../../images/svg-2.svg'
+import img3 from '../../images/svg-3.svg'
+import img4 from '../../images/svg-4.svg'
+import img5 from '../../images/svg1.svg'
 
 
 
@@ -29,7 +31,7 @@ function Portfolio() {
               <CardItem
                 src={img2}
                 text="Backend | Frontend | ReactJS | Firebase"
-                label='Crud - Create | Read | Update | Delete'
+                label='CRUD - Create | Read | Update | Delete'
                 path='/crud'
               />
 
@@ -37,21 +39,21 @@ function Portfolio() {
             <CardsItems>
               <CardItem
                 src={img3}
-                text="Set Sail in the Atlantic Ocean visiting"
-                label='Mystery'
-                path='/services'
+                text="JavaScript | CSS3 | ReactJS "
+                label='Calculadora'
+                path='/calculadora'
               /><br />
               <CardItem
-                src={img3}
-                text="Experience Football on Top of the Himilayan Mountains"
-                label='Adventure'
-                path='/products'
-              /><br />
+                src={img4}
+                text="JavaScript | ReactJS"
+                label='Desktop Aplication'
+                path='/electronjs'
+              />
               <CardItem
-                src={img3}
-                text="Experience Football on Top of the Himilayan Mountains"
-                label='Adventure'
-                path='/products'
+                src={img5}
+                text="API autentication? Backend? Vue? Angular?"
+                label='Under Construction'
+                path='/notfound'
               />
             </CardsItems>
           </CardsWrapper>

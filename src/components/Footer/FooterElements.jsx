@@ -11,10 +11,10 @@ export const FooterContainer = styled.div`
   font-weight: bold;
 `
 export const Text = styled.div`
-  color: black;
+  font-size:1rem;
 `
 export const Email = styled.div`
-  color: black;
+  font-size:1.1rem;
   cursor: pointer;
 `
 export const IconHeart = styled.span`
