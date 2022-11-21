@@ -31,7 +31,7 @@ const HeroSection = () => {
           for the current ​​digital marketing area.
         </HeroP>
         <HeroBtnWrapper>
-          <Button to='contact' onMouseEnter={onHover} onMouseLeave={onHover}
+          <Button to='contact' onMouseEnter={onHover} onMouseLeave={onHover} spy={true} smooth={true} offset={0} duration={500}
             primary="true"
             dark="true">
             Contact Me{hover ? <ArrowForward /> : <ArrowRight />}

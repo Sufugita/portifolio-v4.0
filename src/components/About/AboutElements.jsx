@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   background: ${(props) => props.theme.BackColor};
-  /* min-height: 850px; */
+  min-height: 850px;
   @media screen and (max-width: 768px) {
     padding: 20px 0;    
+    min-height: 950px;
   }
 `
 
@@ -56,6 +57,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  
 `
 
 export const TopLine = styled.p`

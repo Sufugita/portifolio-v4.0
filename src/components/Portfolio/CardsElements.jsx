@@ -12,6 +12,7 @@ export const PortfolioContainer = styled.div`
    @media screen and (max-width: 768px) {
     padding: 20px 0;    
   }
+   
 `
 export const PortfolioH1 = styled.h1`
   font-size: 3rem;
@@ -23,10 +24,7 @@ export const PortfolioH1 = styled.h1`
   justify-content: center;
   margin-top: 60px;
   
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-    margin-top: 90px;
-  }
+  
 `
 
 export const CardsContainer = styled.div`
