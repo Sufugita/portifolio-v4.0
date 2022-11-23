@@ -1,0 +1,21 @@
+.form {
+   display: flex;
+
+}
+
+
+.row {
+   display: grid;
+   grid-column: 12;
+   width: 100%;
+   justify-content: center;
+   padding: 12px 20px;
+   margin: 8px 12px;
+   box-sizing: border-box;
+}
+
+@media(max-width: 768px) {
+   .col {
+      grid-column: 6;
+   }
+}

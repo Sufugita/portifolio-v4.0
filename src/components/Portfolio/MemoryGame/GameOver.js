@@ -4,9 +4,9 @@ export default function GameOver(props) {
   return (props.show ?
     <div id="gameOver">
       <div id="textoFinal">
-        Parabéns, <br /> você completou o jogo!
+        Gratz! <br />
       </div>
-      <button id="restart" onClick={props.handleRestart}>Jogue novamente</button>
+      <button id="restart" onClick={props.handleRestart}>Play Again.</button>
     </div> : <Fragment />
 
   )
