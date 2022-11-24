@@ -34,6 +34,7 @@ export const AboutRow = styled.div`
     grid-auto-columns: minmax(auto, auto);
     grid-auto-rows: minmax(auto,450px);
   }
+ 
 `
 export const Column1 = styled.div`
   margin-bottom: 15px;
@@ -41,9 +42,13 @@ export const Column1 = styled.div`
   grid-area: col1;
 
   @media screen and (max-width: 768px) {
-    grid-auto-rows: minmax(auto,300px);
+    grid-auto-rows: minmax(auto,250px);
     max-height: auto;
   }
+  @media screen and (max-width: 300px) {
+    display: none; 
+  }
+  
 `
 export const Column2 = styled.div`
   margin-bottom: 15px;
@@ -86,6 +91,7 @@ export const Heading = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 2rem;    
   }
+ 
 `
 
 export const Subtitle = styled.p`
@@ -112,7 +118,7 @@ export const Img = styled.img`
   @media screen and (max-width: 768px) {
     scale: 0.5;
   }
-  @media screen and (max-width: 400px) {
-    scale: 0.4;
+  @media screen and (max-width: 300px) {
+    display: none;
   }
 `
