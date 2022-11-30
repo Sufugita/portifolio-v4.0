@@ -1,15 +1,16 @@
 import './Nav.css'
 import React from 'react'
+import { FaHome, FaUserCircle } from 'react-icons/fa'
 
 export default function Nav(props) {
   return <aside className="menu-area">
     <nav className="menu">
       {/* Refatorar em casa (NavItem) */}
       <a href="/crud">
-        <i className="fa fa-home"></i> Home
+        <FaHome /> Home
       </a>
       <a href="/crud/users">
-        <i className="fa fa-users"></i> Users
+        < FaUserCircle /> Users
       </a>
     </nav>
   </aside>

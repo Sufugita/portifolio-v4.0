@@ -5,10 +5,7 @@
   margin: 0px;
   display: grid;
   grid-template-columns: 160px 1fr;
-  grid-template-rows:
-    100px 1fr 40px;
   grid-template-areas:
-    "header header"
     "menu content";
   height: 84.5vh;
   background-color: #0077ff;
@@ -19,25 +16,14 @@
 
 }
 
-/* 
-aside.logo {
-  grid-area: logo;
-  
-} */
-
-header.header {
-  grid-area: header;
-  border-radius: 20px;
-
-}
-
 aside.menu-area {
   grid-area: menu;
+
 }
 
 main.content {
   grid-area: content;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 

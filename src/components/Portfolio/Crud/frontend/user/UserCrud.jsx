@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Main from '../template/Main'
 import './UserCrud.css'
+import NavbarPortfolio from "../../../NavbarPortfolio"
+import Footer from "../../../../Footer"
 
 const headerProps = {
    icon: 'users',
@@ -150,11 +152,14 @@ export default class UserCrud extends Component {
 
    render() {
 
-      return (
+      return (<>
+         <NavbarPortfolio />
          <Main {...headerProps}>
             {this.renderForm()}
             {this.renderTable()}
          </Main>
+         <Footer />
+      </>
       )
    }
 }
