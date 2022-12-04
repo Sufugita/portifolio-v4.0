@@ -38,10 +38,8 @@ export default function MemoryGame() {
 
   return (
     <>
-      <NavbarPortfolio />
-      <div className="memoryDiv">
-        <h1 className="memoryTitle">Memory Game by Igor Oliveira</h1>
-        <h2 className="memorySubtitle">ProgBr</h2>
+      <NavbarPortfolio title="Memory Game by ProgBr"/>
+      <div className="memoryDiv">     
         <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
         <GameOver show={gameOver} handleRestart={restart}></GameOver>
       </div>

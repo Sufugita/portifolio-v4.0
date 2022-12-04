@@ -7,7 +7,7 @@ import Main from "../components/Portfolio/Crud/frontend/template/Main"
 
 const Crud = function (props) {
   return <>
-    <NavbarPortfolio />
+    <NavbarPortfolio title="Projeto CRUD React" />
     <div className="crud">
       <Nav />
       <Main />

@@ -33,7 +33,14 @@ export const NavbarContainer = styled.div`
         text-align: center;             
     }
 `
-
+export const Header = styled.div`
+    display: flex;
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+`
 // Logo //
 export const NavLogo = styled.div`
     justify-self: flex-start;
