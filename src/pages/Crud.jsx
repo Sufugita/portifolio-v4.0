@@ -3,14 +3,14 @@ import '../components/Portfolio/Crud/frontend/CrudStyle/crud.css'
 import Nav from '../components/Portfolio/Crud/frontend/template/Nav'
 import Footer from "../components/Footer"
 import NavbarPortfolio from "../components/Portfolio/NavbarPortfolio"
-import Main from "../components/Portfolio/Crud/frontend/template/Main"
+import MainHome from "../components/Portfolio/Crud/frontend/template/MainHome"
 
 const Crud = function (props) {
   return <>
-    <NavbarPortfolio title="Projeto CRUD React" />
+    <NavbarPortfolio title="Project CRUD React" />
     <div className="crud">
       <Nav />
-      <Main />
+      <MainHome/>
     </div>
     <Footer />
   </>

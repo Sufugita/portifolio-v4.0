@@ -6,7 +6,6 @@ export default function Main(props) {
     <main className="content">
       <div className="texto" >
         {props.children}
-        Opa
       </div>
     </main>
   </>

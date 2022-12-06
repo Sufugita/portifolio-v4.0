@@ -45,8 +45,9 @@ export const Column1 = styled.div`
     grid-auto-rows: minmax(auto,250px);
     max-height: auto;
   }
-  @media screen and (max-width: 300px) {
-    display: none; 
+  @media screen and (max-width: 360px) {
+    margin-bottom:130px
+    /* display: none;  */
   }
   
 `
