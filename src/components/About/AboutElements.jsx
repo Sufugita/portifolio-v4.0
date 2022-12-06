@@ -42,12 +42,11 @@ export const Column1 = styled.div`
   grid-area: col1;
 
   @media screen and (max-width: 768px) {
-    grid-auto-rows: minmax(auto,250px);
+    grid-auto-rows: minmax(auto,360px);
     max-height: auto;
   }
   @media screen and (max-width: 360px) {
-    margin-bottom:130px
-    /* display: none;  */
+    display: none; 
   }
   
 `
