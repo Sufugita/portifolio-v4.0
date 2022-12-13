@@ -15,7 +15,7 @@ const Footer = () => {
           <FaHeart />
         </IconHeart>
         <em> </em>
-        por Ya<span style={{ color: 'red' }}>Su</span>yuki
+        by Ya<span style={{ color: 'red' }}>Su</span>yuki
       </Text>
     </FooterContainer>
   )
