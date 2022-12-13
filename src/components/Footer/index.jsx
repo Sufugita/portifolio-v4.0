@@ -8,13 +8,14 @@ const Footer = () => {
       <Email onClick={() => window.location = 'mailto:yasuyukidev@gmail.com'}>
         yasuyukidev@gmail.com
       </Email>
-      <Text>Desenvolvido com
+      <Text>
+        Developed with
         <em> </em>
         <IconHeart>
           <FaHeart />
         </IconHeart>
         <em> </em>
-        por Ya<span style={{color: 'red'}}>Su</span>yuki
+        por Ya<span style={{ color: 'red' }}>Su</span>yuki
       </Text>
     </FooterContainer>
   )
